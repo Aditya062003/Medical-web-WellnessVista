@@ -49,7 +49,7 @@ const MainPage = () => {
         <div id="doctors">
           <Doctors />
         </div>
-        <div id="blogs">
+        <div id="blog">
           <Blogs />
         </div>
       </main>

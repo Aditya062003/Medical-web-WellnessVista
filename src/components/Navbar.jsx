@@ -47,7 +47,7 @@ const Navbar = () => {
               duration={500}
             >
               <img src={Logo} className="w-12 h-12" />
-              <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
+              <h1 className=" text-2xl font-semibold">InHeal.</h1>
             </Link>
           </div>
 

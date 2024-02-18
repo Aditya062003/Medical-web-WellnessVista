@@ -1,46 +1,52 @@
+import img3 from "../assets/img/doc3.jpg";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import img1 from "../assets/img/doc.jpeg";
+import img2 from "../assets/img/doc2.jpg";
+import img4 from "../assets/img/doc4.jpg";
+import img5 from "../assets/img/doc5.jpg";
+import img6 from "../assets/img/doc6.jpg";
 
 const Doctors = () => {
   const data = [
     {
-      img: "/src/assets/img/doc.jpeg",
+      img: img1,
       name: "Dr. Serena Mitchell",
       specialties: "M. A. Clinical Psychology B. Ed. Ph. D. Psychology",
       exp: "18 Year Counseling experience",
     },
     {
-      img: "/src/assets/img/doc2.jpg",
+      img: img2,
       name: "Dr. Julian Bennett",
-      specialties: "Cardiologist",
+      specialties: "Clinical Psychology",
       exp: "7 Year Counseling experience",
     },
     {
-      img: "/src/assets/img/doc3.jpg",
+      img: img3,
       name: "Dr. Camila Rodriguez",
-      specialties: "Pediatrician",
+      specialties: "Psychiatrist",
       exp: "8 Year Counseling experience",
     },
     {
-      img: "/src/assets/img/doc4.jpg",
+      img: img4,
       name: "Dr. Victor Nguyen",
-      specialties: "Neurologist",
+      specialties: "Psychotherapist",
       exp: "14 Year Counseling experience",
     },
     {
-      img: "/src/assets/img/doc5.jpg",
+      img: img5,
       name: "Dr. Ethan Carter",
-      specialties: "Dermatologist",
+      specialties: "Counselor",
       exp: "13 Year Counseling experience",
     },
     {
-      img: "/src/assets/img/doc6.jpg",
+      img: img6,
       name: "Dr. Olivia Martinez",
-      specialties: "Ophthalmologist",
+      specialties: "Counselor",
       exp: "18 Year Counseling experience",
     },
   ];
@@ -92,8 +98,9 @@ const Doctors = () => {
             Our Doctors
           </h1>
           <p className=" mt-2 text-center lg:text-start">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-            quidem.
+            Our team of dedicated mental wellness professionals, each
+            specializing in unique fields such as psychology, counseling,
+            psychotherapy, psychiatry, and more.
           </p>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
@@ -128,9 +135,7 @@ const Doctors = () => {
 
               <div className=" flex flex-col justify-center items-center">
                 <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
-                <h1 className=" font-semibold pt-2">
-                  {e.exp}
-                </h1>
+                <h1 className=" font-semibold pt-2">{e.exp}</h1>
                 <h3 className=" pt-2">{e.specialties}</h3>
               </div>
             </div>
